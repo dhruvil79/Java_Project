@@ -1,0 +1,36 @@
+package com.dao;
+import java.sql.*;
+
+import com.entities.user;
+
+public class userdao {
+	private Connection con;
+
+	public userdao(Connection con) {
+		super();
+		this.con = con;
+	}
+	
+	public boolean saveUser(user u)
+	{
+		boolean f=false;
+		try
+		{
+			String qurey="insert into user(User_Name,User_Email,User_Password,User_Gender,User_About) values(?,?,?,?,?)";
+			PreparedStatement pst=this.con.prepareStatement(qurey);
+			pst.setString(1,u.getName());
+			pst.setString(2,u.getEmail());
+			pst.setString(3,u.getPassword());
+			pst.setString(4,u.getGender());
+			pst.setString(5,u.getAbout());
+			pst.executeUpdate();
+			f=true;
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+		return f;
+	}
+	
+}

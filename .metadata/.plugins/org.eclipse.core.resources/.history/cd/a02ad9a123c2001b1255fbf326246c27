@@ -1,0 +1,7 @@
+package com.servlet;
+
+import HttpServlet;
+
+public class RegisterServlet extends HttpServlet {
+
+}
