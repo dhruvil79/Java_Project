@@ -1,0 +1,16 @@
+package com.dao;
+import java.sql.*;
+
+public class postdao {
+	Connection con;
+	
+	public postdao(Connection con)
+	{
+		this.con=con;
+	}
+	
+	public ArrayList<category> getAllcategory()
+	{
+		
+	}
+}

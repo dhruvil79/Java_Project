@@ -56,7 +56,7 @@
                                     <label for="gender">Select Gender</label>
                                     <br>
                                     <input type="radio"  id="gender" name="gender" value="male" > Male&nbsp;&nbsp;&nbsp;
-                                    <input type="radio"  id="gender" name="gender" value="famale"> Female
+                                    <input type="radio"  id="gender" name="gender" value="female"> Female
                                 </div>
 
                                 <div class="form-group">

@@ -11,26 +11,27 @@ public class user {
 	private String gender;
 	private Timestamp dateTIme;
 	private String profile;
-	public user(int id, String name, String email, String password, String about, String gender, Timestamp dateTIme) {
+	public user(int id, String name, String email, String password,String gender,String about, Timestamp dateTIme) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.email = email;
 		this.password = password;
-		this.about = about;
 		this.gender = gender;
+		this.about = about;
 		this.dateTIme = dateTIme;
 	}
 	public user() {
 		super();
 	}
-	public user(String name, String email, String password, String about, String gender) {
+	public user(String name, String email, String password,String gender, String about)
+	{
 		super();
 		this.name = name;
 		this.email = email;
 		this.password = password;
-		this.about = about;
 		this.gender = gender;
+		this.about = about;
 	}
 	public int getId() {
 		return id;

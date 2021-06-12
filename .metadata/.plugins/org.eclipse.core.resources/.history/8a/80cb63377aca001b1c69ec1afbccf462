@@ -1,0 +1,9 @@
+package com.entities;
+
+public class post {
+	private int pid;
+	private String pTitle;
+	private String pContent;
+	private String pCode;
+	private String pPic;
+}

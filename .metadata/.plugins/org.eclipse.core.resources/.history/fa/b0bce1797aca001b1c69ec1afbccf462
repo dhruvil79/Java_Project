@@ -1,0 +1,13 @@
+package com.entities;
+
+import java.sql.Timestamp;
+
+public class post {
+	private int pid;
+	private String pTitle;
+	private String pContent;
+	private String pCode;
+	private String pPic;
+	private Timestamp pDate;
+	private int cid;
+}

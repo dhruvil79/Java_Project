@@ -4,6 +4,7 @@ import javax.servlet.http.HttpServlet;
 
 
 import com.dao.userdao;
+import com.entities.Message;
 import com.entities.user;
 import com.helper.ConnectionProvider;
 
@@ -17,7 +18,7 @@ import javax.servlet.http.HttpSession;
 
 /**
  *
- * @author Durgesh
+ *
  */
 public class LoginServlet extends HttpServlet {
 
@@ -52,14 +53,14 @@ public class LoginServlet extends HttpServlet {
 
             if (u == null) {
                 //login.................
-//                error///
+//                error///	
 //                out.println("Invalid Details..try again");
-                /*Messag msg = new Message("Invalid Details ! try with another", "error", "alert-danger");
+                Message msg = new Message("Invalid Details ! try with another", "error", "alert-danger");
                 HttpSession s = request.getSession();
                 s.setAttribute("msg", msg);
 
-                response.sendRedirect("login_page.jsp");*/
-            	out.println("Invalid Details");
+                response.sendRedirect("login_page.jsp");
+            	//out.println("Invalid Details");
             } else {
                 //......
 //                login success

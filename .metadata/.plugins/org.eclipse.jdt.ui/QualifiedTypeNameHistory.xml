@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.sql.Timestamp"/>
-<fullyQualifiedTypeName name="javax.net.ssl.HttpsURLConnection"/>
-<fullyQualifiedTypeName name="javax.servlet.annotation.MultipartConfig"/>
-<fullyQualifiedTypeName name="com.helper.ConnectionProvider"/>
+    <fullyQualifiedTypeName name="javax.net.ssl.HttpsURLConnection"/>
+    <fullyQualifiedTypeName name="javax.servlet.annotation.MultipartConfig"/>
+    <fullyQualifiedTypeName name="com.helper.ConnectionProvider"/>
+    <fullyQualifiedTypeName name="com.entities.Message"/>
+    <fullyQualifiedTypeName name="javax.servlet.http.Part"/>
+    <fullyQualifiedTypeName name="java.sql.Timestamp"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="com.entities.category"/>
+    <fullyQualifiedTypeName name="com.entities.post"/>
 </qualifiedTypeNameHistroy>

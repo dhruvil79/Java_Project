@@ -1,0 +1,7 @@
+package com.entities;
+
+public class category {
+	private int cid;
+	private String name;
+	private String description;
+}
