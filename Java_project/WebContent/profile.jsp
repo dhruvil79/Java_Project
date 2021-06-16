@@ -26,7 +26,7 @@
              clip-path: polygon(30% 0%, 70% 0%, 100% 0, 100% 91%, 63% 100%, 22% 91%, 0 99%, 0 0);
             }
         </style>
-
+	
 <title>Insert title here</title>
 </head>
     <body>
@@ -41,7 +41,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#"> <span class="	fa fa-bell-o"></span> LearnCode with Dhruvil <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#"> <span class="	fa fa-bell-o"></span> LearnCode with Durgesh <span class="sr-only">(current)</span></a>
                     </li>
 
                     <li class="nav-item dropdown">
@@ -60,10 +60,11 @@
                         <a class="nav-link" href="#"> <span class="	fa fa-address-card-o"></span> Contact</a>
                     </li>
 
-					
-                      <li class="nav-item">
+                    <li class="nav-item">
                         <a class="nav-link" href="#" data-toggle="modal" data-target="#add-post-modal" > <span class="	fa fa-asterisk"></span> Do Post</a>
                     </li>
+
+
 
                 </ul>
 
@@ -396,6 +397,28 @@
                         contentType: false
                     })
                 })
+            })
+        </script>
+        <script>
+            function getPosts(catId, temp) {
+                $("#loader").show();
+                $("#post-container").hide()
+                $(".c-link").removeClass('active')
+                $.ajax({
+                    url: "load_posts.jsp",
+                    data: {cid: catId},
+                    success: function (data, textStatus, jqXHR) {
+                        console.log(data);
+                        $("#loader").hide();
+                        $("#post-container").show();
+                        $('#post-container').html(data)
+                        $(temp).addClass('active')
+                    }
+                })
+            }
+            $(document).ready(function (e) {
+                let allPostRef = $('.c-link')[0]
+                getPosts(0, allPostRef)
             })
         </script>
     </body>

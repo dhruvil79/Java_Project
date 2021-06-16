@@ -57,5 +57,17 @@
   <url-pattern>/AddPostServlet</url-pattern>
   </servlet-mapping>
   
+<servlet>
+        <servlet-name>LikeServlett</servlet-name>
+        <servlet-class>com.servlets.LikeServlet</servlet-class>
+        
+    </servlet>
+  	
+  	<servlet-mapping>
+  <servlet-name>LikeServlett</servlet-name>
+  <url-pattern>/LikeServlet</url-pattern>
+  </servlet-mapping>
+  
+
 
 </web-app>

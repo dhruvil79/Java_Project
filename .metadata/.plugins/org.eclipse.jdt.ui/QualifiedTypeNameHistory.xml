@@ -9,4 +9,5 @@
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="com.entities.category"/>
     <fullyQualifiedTypeName name="com.entities.post"/>
+    <fullyQualifiedTypeName name="java.awt.List"/>
 </qualifiedTypeNameHistroy>

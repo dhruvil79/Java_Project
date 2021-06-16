@@ -16,10 +16,6 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import javax.servlet.http.Part;
 
-/**
- *
- * @author Durgesh
- */
 @MultipartConfig
 public class AddPostServlet extends HttpServlet {
 
@@ -51,7 +47,7 @@ public class AddPostServlet extends HttpServlet {
             postdao dao = new postdao(ConnectionProvider.getConnection());
             if (dao.savePost(p)) {
 
-                String path = request.getRealPath(".") +File.separator+"WebContent"+File.separator +"blog_pics" + File.separator + part.getSubmittedFileName();
+                String path = request.getServletContext().getRealPath("/")+"\\blog_pics\\" + File.separator + part.getSubmittedFileName();
                 Helper.saveFile(part.getInputStream(), path);
                 out.println("done");
             } else {

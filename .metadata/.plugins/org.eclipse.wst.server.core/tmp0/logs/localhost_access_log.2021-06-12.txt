@@ -1,0 +1,12 @@
+127.0.0.1 - - [12/Jun/2021:10:55:21 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [12/Jun/2021:10:55:51 +0530] "GET /Java_project/ HTTP/1.1" 200 8447
+0:0:0:0:0:0:0:1 - - [12/Jun/2021:10:55:53 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [12/Jun/2021:11:55:17 +0530] "GET /Java_project/login_page.jsp HTTP/1.1" 200 5946
+0:0:0:0:0:0:0:1 - - [12/Jun/2021:11:55:17 +0530] "GET /Java_project/js/myjs.js HTTP/1.1" 404 782
+0:0:0:0:0:0:0:1 - - [12/Jun/2021:11:55:18 +0530] "GET /Java_project/js/myjs.js HTTP/1.1" 404 782
+0:0:0:0:0:0:0:1 - - [12/Jun/2021:11:55:30 +0530] "POST /Java_project/LoginServlet HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [12/Jun/2021:11:55:38 +0530] "GET /Java_project/profile.jsp HTTP/1.1" 200 17716
+0:0:0:0:0:0:0:1 - - [12/Jun/2021:11:55:38 +0530] "GET /Java_project/js/myjs.js HTTP/1.1" 404 782
+0:0:0:0:0:0:0:1 - - [12/Jun/2021:11:55:38 +0530] "GET /Java_project/pics/cert-21758426-1068.png HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [12/Jun/2021:11:55:38 +0530] "GET /Java_project/js/myjs.js HTTP/1.1" 404 782
+0:0:0:0:0:0:0:1 - - [12/Jun/2021:11:56:20 +0530] "POST /Java_project/AddPostServlet HTTP/1.1" 200 6

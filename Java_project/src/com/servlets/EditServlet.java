@@ -66,11 +66,11 @@ public class EditServlet extends HttpServlet {
             boolean ans = userDao.updateUser(user);
             if (ans) {
 
-                String path = request.getRealPath("/") + "pics" + File.separator + user.getProfile();
+                String path = request.getServletContext().getRealPath("/") + "pics" + File.separator + user.getProfile();
 
                 //start of photo work
                 //delete code
-                String pathOldFile = request.getRealPath("/") + "pics" + File.separator + oldFile;
+                String pathOldFile = request.getServletContext().getRealPath("/") + "pics" + File.separator + oldFile;
 
                 if (!oldFile.equals("default.png")) {
                     Helper.deleteFile(pathOldFile);
